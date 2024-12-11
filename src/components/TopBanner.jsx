@@ -7,9 +7,6 @@ const TopBanner = () => {
       className="relative w-full h-96 flex items-center mt-5 justify-center bg-cover bg-center"
       style={{ backgroundImage: `url(${bgColor})` }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-
       {/* Content */}
       <div className="relative z-10 text-center">
         {/* Heading */}
@@ -18,15 +15,19 @@ const TopBanner = () => {
         </h1>
 
         {/* Search Box */}
-        <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 flex flex-col items-center justify-center border-2 border-zinc-300 space-y-4">
+        <div className="bg-white rounded-lg shadow-lg pb-5 flex flex-col items-center justify-center border-2 border-zinc-300 space-y-4">
           {/* Titles Row */}
-          <div className="w-full flex flex-col md:flex-row items-center text-center justify-center border-2 border-zinc-300">
-            <h2 className="text-lg font-semibold text-white bg-blue-600 mb-2 md:mb-0">
-              3-Step Easy Search®
-            </h2>
-            <h2 className="text-lg font-semibold text-gray-600 mb-2 md:mb-0">
-              Search by Serial Number
-            </h2>
+          <div className="w-full flex flex-col md:flex-row items-center text-center justify-between border-2 border-zinc-300">
+            <div className="w-full">
+              <h2 className="text-lg font-semibold py-3 text-white bg-blue-600 mb-2 md:mb-0">
+                3-Step Easy Search®
+              </h2>
+            </div>
+            <div className="w-full">
+              <h2 className="text-lg font-semibold py-3 text-black bg-gray-100 mb-2 md:mb-0">
+                Search by Serial Number
+              </h2>
+            </div>
           </div>
 
           {/* Inputs Row */}
