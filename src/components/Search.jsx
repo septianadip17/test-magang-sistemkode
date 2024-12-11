@@ -37,7 +37,7 @@ const Search = () => {
 
       {/* Navigation Section */}
       <nav className="bg-blue-600">
-        <div className="container mx-auto flex justify-center space-x-0 font-bold text-xs p-2">
+        <div className="container mx-auto flex sm:justify-between lg:justify-center space-x-0 font-bold text-sm p-2">
           <NavbarLink href="#">HOME</NavbarLink>
           <NavbarLink href="#">INK CARTRIDGES</NavbarLink>
           <NavbarLink href="#">TONER CARTRIDGES</NavbarLink>
