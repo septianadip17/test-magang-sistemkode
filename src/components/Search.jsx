@@ -16,8 +16,8 @@ const Search = () => {
           </button>
         </div>
       </div>
-      <nav className="bg-blue-600">
-        <div className="container mx-auto flex space-x-4 p-2">
+      <nav className="bg-blue-600 mx-auto">
+        <div className="container mx-auto flex space-x-4 p-2 font-bold text-xs">
           <a
             href="#"
             className="text-white hover:bg-blue-500 px-3 py-2 rounded"
