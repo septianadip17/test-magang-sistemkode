@@ -3,17 +3,22 @@ import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
 import hp62 from "../assets/hp62.jpg";
 import canon from "../assets/canontoner.jpg";
 
+// Reusable ProductCard Component
 const ProductCard = ({ imgSrc, altText, name, code, price, discountPrice }) => {
   return (
     <div className="shadow-md rounded-lg p-4 text-center border-2 border-zinc-300">
-      <div className="mb-4 bg-gray-400 border-2 border-zinc-300">
-        <img src={imgSrc} alt={altText} className="mx-auto mb-2" />
+      <div className="mb-4 bg-gray-400 border-2 border-zinc-300 flex items-center justify-center">
+        <img
+          src={imgSrc}
+          alt={altText}
+          className="w-full h-full object-contain"
+        />
       </div>
       <div className="mb-4 text-start">
         <h3 className="font-semibold">{name}</h3>
         <p className="text-zinc-600">({code})</p>
       </div>
-      <div className="flex border-2 border-zinc-300 justify-between items-center">
+      <div className="flex justify-between items-center">
         <div className="flex flex-col">
           {discountPrice && (
             <p className="text-sm line-through font-bold">${price}</p>
@@ -26,7 +31,7 @@ const ProductCard = ({ imgSrc, altText, name, code, price, discountPrice }) => {
             ${discountPrice || price}
           </p>
         </div>
-        <button className="bg-orange-500 text-white px-4 py-2 rounded mt-2 hover:bg-orange-600">
+        <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
           ADD TO CART
         </button>
       </div>
@@ -34,6 +39,7 @@ const ProductCard = ({ imgSrc, altText, name, code, price, discountPrice }) => {
   );
 };
 
+// Featured Component
 const Featured = () => {
   const products = [
     {
